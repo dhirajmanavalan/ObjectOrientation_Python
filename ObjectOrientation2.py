@@ -21,5 +21,13 @@ def main():
     cr.passing()
     cr.running()
 
+    rd = Football('Ronaldo','Tirupathur','400')
+    print(rd.name)
+    print(rd.team)
+    print(rd.goals)
+    rd.shooting()
+    rd.passing()
+    rd.running()
+
 if __name__ == '__main__':
     main()
