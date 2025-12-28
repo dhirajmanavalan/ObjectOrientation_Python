@@ -12,19 +12,31 @@ class Football:
     def running(self):
         print(self.name, "is running")
 
+    def simple(self):
+        print(self.name)
+        print(self.team)
+        print(self.goals)
+        print(self.age)
+
+
+
 def main():
     cr = Football('christiano','Juventus',746)
-    print(cr.name)
-    print(cr.team)
-    print(cr.goals)
+    cr.age = 12
+    cr.simple()
     cr.shooting()
     cr.passing()
     cr.running()
 
+    
+
     rd = Football('Ronaldo','Tirupathur','400')
-    print(rd.name)
-    print(rd.team)
-    print(rd.goals)
+    rd.age=25
+    
+    setattr(rd,'age',12)
+    print(getattr(rd,'age'))
+    print(hasattr(rd,'ee'))
+    rd.simple()
     rd.shooting()
     rd.passing()
     rd.running()
