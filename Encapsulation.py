@@ -63,20 +63,40 @@ data managling achieve -- when we use it it will CHANGE private variable name ha
 # print(ah.balance1)
 
 
+# class AccountHolder:
+#     def __init__(self):
+#         self.__balance = int(input("Enter balance amount: "))
+        
+#     @property   
+#     def bala(self):
+#         return self.__balance
+    
+#     @bala.setter
+#     def bala(self,amount):
+#         self.__balance=amount
+        
+#     # balance1 = property(get_balance,set_balance)
+        
+# ah = AccountHolder()
+# ah.bala = 1222
+# print(ah.bala)
+
 class AccountHolder:
     def __init__(self):
-        self.__balance = int(input("Enter balance amount: "))
-        
-    @property   
-    def bala(self):
-        return self.__balance
+        self.__balance = 12000
     
-    @bala.setter
-    def bala(self,amount):
-        self.__balance=amount
+    @property
+    def bal(self):
+        return self.__balance
+
+    @bal.setter
+    def bal(self,amount):
+        if amount > 0 :
+            self.__balance=amount
+        else:
+            print('invalid amount..')
         
-    # balance1 = property(get_balance,set_balance)
-        
-ah = AccountHolder()
-ah.bala = 1222
-print(ah.bala)
+
+ah = AccountHolder()    
+ah.bal=-20000
+print(ah.bal)
