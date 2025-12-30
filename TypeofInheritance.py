@@ -1,26 +1,29 @@
 class Messenger:
     def sendMessage(self):
-        print('Message is sent')
-    
+        print("Message is sent")
+
     def receiveMessage(self):
-        print('Message is received')
-        
+        print("Message is received")
+
+
 class InternalMessenger(Messenger):
     pass
 
+
 class WhatsappMessenger(Messenger):
     def sendMessage(self):
-        print('whatsapp is sent')
-        
+        print("whatsapp is sent")
+
     def receiveMessage(self):
-        print('whatsapp is received')
-        
+        print("whatsapp is received")
+
     def set_dp(self):
-        print('dp is set')
-        
+        print("dp is set")
+
     def set_status(self):
-        print('status is set')
-        
+        print("status is set")
+
+
 im = InternalMessenger()
 im.sendMessage()
 im.receiveMessage()

@@ -1,10 +1,11 @@
 class Car:
     def __init__(self):
         self.brand = "BMW"
-    
+
     def car_engine(self):
         print("Hello")
-    
+
+
 def main():
     c = Car()
     print(c.brand)
@@ -14,5 +15,6 @@ def main():
     c2.car_engine()
     print(c2.brand)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main
