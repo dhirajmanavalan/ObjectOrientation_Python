@@ -1,0 +1,20 @@
+INFO:root:main() started excution
+INFO:root:input taken from user
+INFO:root:calling sum_even()
+INFO:root:sum_even() started excution
+INFO:root:sum_even() finished excution
+INFO:root:print result of sum_even() collected
+INFO:root:main() started excution
+INFO:root:input taken from user
+INFO:root:calling sum_even()
+INFO:root:sum_even() started excution
+INFO:root:sum_even() finished excution
+INFO:root:print result of sum_even() collected
+INFO:root:main() finished excution
+INFO:root:main() started excution
+INFO:root:input taken from user
+INFO:root:calling sum_even()
+INFO:root:sum_even() started excution
+INFO:root:sum_even() finished excution
+INFO:root:print result of sum_even() collected
+INFO:root:main() finished excution
