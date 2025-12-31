@@ -1,4 +1,4 @@
-'''This is logger for im taking an examplee inside print statements looks like clumsy soo im using loggers to overcome'''
+"""This is logger for im taking an examplee inside print statements looks like clumsy soo im using loggers to overcome"""
 
 # def sum_even(lst):
 #     print("sum_even() started excution")
@@ -25,9 +25,10 @@
 
 # main()
 
-'''Using log file to achieve this program'''
+"""Using log file to achieve this program"""
 
 import logging
+
 
 def sum_even(lst):
     logging.info("sum_even() started excution")
@@ -41,7 +42,7 @@ def sum_even(lst):
 
 
 def main():
-    logging.basicConfig(filename='log.txt',level=logging.INFO)
+    logging.basicConfig(filename="log.txt", level=logging.INFO)
     logging.info("main() started excution")
 
     lst = list(map(int, input().split()))

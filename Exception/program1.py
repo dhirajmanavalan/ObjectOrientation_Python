@@ -12,6 +12,3 @@ else:
 
 
 print("connection successfully ended to established")
-
-
-
