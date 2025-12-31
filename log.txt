@@ -48,3 +48,4 @@ DEBUG:root:res1 = 15
 DEBUG:root:res2 = 5
 DEBUG:root:res3 = 50
 DEBUG:root:res4 = 2.0
+WARNING:root:Mobile number validation failed
