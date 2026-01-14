@@ -1,0 +1,8 @@
+        # result = Calc.add(5,10)
+        # result2 = Calc.add(4,2)
+        # result3 = Calc.add(4,1)
+        # result4 = Calc.add(-4,2)
+        # self.assertEqual(result,15)
+        # self.assertEqual(result2,6)
+        # self.assertEqual(result3,5)
+        # self.assertEqual(result4,-2)
