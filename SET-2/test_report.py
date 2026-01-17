@@ -5,7 +5,7 @@ from report import EmployeeReport
 class TestEmployeeReport(unittest.TestCase):
 
     def test_grade_A(self):
-        emp = Employee("EMP001", "Alex", 60000, 95)
+        emp = Employee("EMP01", "Alex", 60000, 95)
         report = EmployeeReport(emp)
         self.assertEqual(report.generate_grade(), "A")
 
@@ -15,7 +15,7 @@ class TestEmployeeReport(unittest.TestCase):
         self.assertEqual(report.generate_grade(), "B")
 
     def test_grade_C(self):
-        emp = Employee("EMP003", "Carol", 22000, 72)
+        emp = Employee("EMP3", "Carol", 22000, 72)
         report = EmployeeReport(emp)
         self.assertEqual(report.generate_grade(), "C")
 

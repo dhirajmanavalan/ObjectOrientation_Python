@@ -6,4 +6,4 @@ class Employee:
         self.emp_code = emp_code
         self.name = format_name(name)
         self.salary = salary
-        self.attendance = attendance  # in percentage
+        self.attendance = attendance

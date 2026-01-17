@@ -1,20 +1,16 @@
-import re
 
-def vaildate_email(email):
-    regex =  r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    return bool(re.match(regex,email))
+from validator import InvalidEmailError, InvalidPhoneError
 
-def validate_password(password):
-    if len(password) < 8:
-        return False
-    if not re.search(r'[A-Z]',password):
-        return False
-    if not re.search(r'[a-z]', password):
-        return False
-    if not re.search(r'\d', password):
-        return False
-    if not re.search(r'[@$!%*?&]', password):
-        return False
-    return True
-        
-    
+try:
+    emp_id = int(input("Enter Employee ID: "))
+    name = input("Enter Name: ")
+    email = input("Enter Email: ")
+    phone = input("Enter Phone: ")
+
+    emp = Employee(emp_id, name, email, phone)
+    print("Employee created successfully")
+
+except ValueError:
+    print("Employee ID must be a number")
+except (InvalidEmailError, InvalidPhoneError) as e:
+    print(e)
